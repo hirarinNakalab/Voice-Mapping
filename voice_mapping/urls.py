@@ -21,9 +21,11 @@ from . import settings
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    # path('admin/', admin.site.urls),
+    path('control/', admin.site.urls),
     path('', include('vmap.urls')),
 
 ]
+print(urlpatterns)
 # 開発サーバーでメディアを配信できるようにする設定
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

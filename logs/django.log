@@ -1,0 +1,55 @@
+2020-05-29 20:55:30,786	[ERROR]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/core/handlers/exception.py(Line:77)	Invalid HTTP_HOST header: '18.216.231.209'. You may need to add '18.216.231.209' to ALLOWED_HOSTS.
+2020-05-29 20:55:30,787	[WARNING]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/utils/log.py(Line:228)	Bad Request: /
+2020-05-29 20:59:44,110	[ERROR]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/core/handlers/exception.py(Line:77)	Invalid HTTP_HOST header: '18.216.231.209'. You may need to add '18.216.231.209' to ALLOWED_HOSTS.
+2020-05-29 20:59:44,110	[WARNING]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/utils/log.py(Line:228)	Bad Request: /
+2020-05-29 21:38:37,740	[ERROR]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/core/handlers/exception.py(Line:77)	Invalid HTTP_HOST header: 'example.com'. You may need to add 'example.com' to ALLOWED_HOSTS.
+2020-05-29 21:38:37,740	[WARNING]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/utils/log.py(Line:228)	Bad Request: /
+2020-05-29 21:38:38,011	[ERROR]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/core/handlers/exception.py(Line:77)	Invalid HTTP_HOST header: '169.254.169.254'. You may need to add '169.254.169.254' to ALLOWED_HOSTS.
+2020-05-29 21:38:38,011	[WARNING]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/utils/log.py(Line:228)	Bad Request: /
+2020-05-29 21:38:38,283	[ERROR]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/core/handlers/exception.py(Line:77)	Invalid HTTP_HOST header: '[::ffff:a9fe:a9fe]'. You may need to add '[::ffff:a9fe:a9fe]' to ALLOWED_HOSTS.
+2020-05-29 21:38:38,283	[WARNING]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/utils/log.py(Line:228)	Bad Request: /
+2020-05-29 21:38:38,554	[ERROR]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/core/handlers/exception.py(Line:77)	Invalid HTTP_HOST header: '169.254.169.254'. You may need to add '169.254.169.254' to ALLOWED_HOSTS.
+2020-05-29 21:38:38,555	[WARNING]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/utils/log.py(Line:228)	Bad Request: /latest/dynamic/instance-identity/document
+2020-05-29 21:38:38,825	[ERROR]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/core/handlers/exception.py(Line:77)	Invalid HTTP_HOST header: '[::ffff:a9fe:a9fe]'. You may need to add '[::ffff:a9fe:a9fe]' to ALLOWED_HOSTS.
+2020-05-29 21:38:38,825	[WARNING]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/utils/log.py(Line:228)	Bad Request: /latest/dynamic/instance-identity/document
+2020-05-30 05:35:03,468	[ERROR]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/core/handlers/exception.py(Line:77)	Invalid HTTP_HOST header: '18.216.231.209'. You may need to add '18.216.231.209' to ALLOWED_HOSTS.
+2020-05-30 05:35:03,468	[WARNING]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/utils/log.py(Line:228)	Bad Request: /solr/admin/info/system
+2020-05-30 05:38:18,092	[ERROR]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/core/handlers/exception.py(Line:77)	Invalid HTTP_HOST header: '18.216.231.209'. You may need to add '18.216.231.209' to ALLOWED_HOSTS.
+2020-05-30 05:38:18,092	[WARNING]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/utils/log.py(Line:228)	Bad Request: /
+2020-05-30 05:38:18,392	[ERROR]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/core/handlers/exception.py(Line:77)	Invalid HTTP_HOST header: '18.216.231.209'. You may need to add '18.216.231.209' to ALLOWED_HOSTS.
+2020-05-30 05:38:18,392	[WARNING]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/utils/log.py(Line:228)	Bad Request: /
+2020-05-30 05:45:21,822	[ERROR]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/core/handlers/exception.py(Line:77)	Invalid HTTP_HOST header: '18.216.231.209'. You may need to add '18.216.231.209' to ALLOWED_HOSTS.
+2020-05-30 05:45:21,822	[WARNING]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/utils/log.py(Line:228)	Bad Request: /index.php
+2020-05-30 06:56:48,958	[ERROR]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/core/handlers/exception.py(Line:77)	Invalid HTTP_HOST header: '18.216.231.209'. You may need to add '18.216.231.209' to ALLOWED_HOSTS.
+2020-05-30 06:56:48,958	[WARNING]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/utils/log.py(Line:228)	Bad Request: /
+2020-05-30 07:08:23,422	[ERROR]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/core/handlers/exception.py(Line:77)	Invalid HTTP_HOST header: '18.216.231.209'. You may need to add '18.216.231.209' to ALLOWED_HOSTS.
+2020-05-30 07:08:23,422	[WARNING]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/utils/log.py(Line:228)	Bad Request: /api/jsonws/invoke
+2020-05-30 08:17:56,064	[WARNING]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/utils/log.py(Line:228)	Not Found: /favicon.ico
+2020-05-30 08:18:46,331	[ERROR]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/core/handlers/exception.py(Line:77)	Invalid HTTP_HOST header: '18.216.231.209'. You may need to add '18.216.231.209' to ALLOWED_HOSTS.
+2020-05-30 08:18:46,331	[WARNING]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/utils/log.py(Line:228)	Bad Request: /.git/config
+2020-05-30 08:18:46,836	[ERROR]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/core/handlers/exception.py(Line:77)	Invalid HTTP_HOST header: '18.216.231.209'. You may need to add '18.216.231.209' to ALLOWED_HOSTS.
+2020-05-30 08:18:46,836	[WARNING]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/utils/log.py(Line:228)	Bad Request: /.env
+2020-05-30 08:18:47,334	[ERROR]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/core/handlers/exception.py(Line:77)	Invalid HTTP_HOST header: '18.216.231.209'. You may need to add '18.216.231.209' to ALLOWED_HOSTS.
+2020-05-30 08:18:47,335	[WARNING]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/utils/log.py(Line:228)	Bad Request: /sftp-config.json
+2020-05-30 08:18:47,834	[ERROR]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/core/handlers/exception.py(Line:77)	Invalid HTTP_HOST header: '18.216.231.209'. You may need to add '18.216.231.209' to ALLOWED_HOSTS.
+2020-05-30 08:18:47,835	[WARNING]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/utils/log.py(Line:228)	Bad Request: /.ftpconfig
+2020-05-30 08:18:48,333	[ERROR]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/core/handlers/exception.py(Line:77)	Invalid HTTP_HOST header: '18.216.231.209'. You may need to add '18.216.231.209' to ALLOWED_HOSTS.
+2020-05-30 08:18:48,334	[WARNING]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/utils/log.py(Line:228)	Bad Request: /.remote-sync.json
+2020-05-30 08:18:48,832	[ERROR]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/core/handlers/exception.py(Line:77)	Invalid HTTP_HOST header: '18.216.231.209'. You may need to add '18.216.231.209' to ALLOWED_HOSTS.
+2020-05-30 08:18:48,832	[WARNING]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/utils/log.py(Line:228)	Bad Request: /.vscode/ftp-sync.json
+2020-05-30 08:18:49,331	[ERROR]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/core/handlers/exception.py(Line:77)	Invalid HTTP_HOST header: '18.216.231.209'. You may need to add '18.216.231.209' to ALLOWED_HOSTS.
+2020-05-30 08:18:49,331	[WARNING]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/utils/log.py(Line:228)	Bad Request: /.vscode/sftp.json
+2020-05-30 08:18:49,840	[ERROR]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/core/handlers/exception.py(Line:77)	Invalid HTTP_HOST header: '18.216.231.209'. You may need to add '18.216.231.209' to ALLOWED_HOSTS.
+2020-05-30 08:18:49,841	[WARNING]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/utils/log.py(Line:228)	Bad Request: /deployment-config.json
+2020-05-30 08:18:50,343	[ERROR]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/core/handlers/exception.py(Line:77)	Invalid HTTP_HOST header: '18.216.231.209'. You may need to add '18.216.231.209' to ALLOWED_HOSTS.
+2020-05-30 08:18:50,344	[WARNING]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/utils/log.py(Line:228)	Bad Request: /ftpsync.settings
+2020-05-30 08:26:04,194	[WARNING]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/utils/log.py(Line:228)	Not Found: /404.html
+2020-05-30 08:26:13,657	[WARNING]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/utils/log.py(Line:228)	Not Found: /404.html
+2020-05-30 08:28:23,820	[WARNING]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/utils/log.py(Line:228)	Not Found: /404.html
+2020-05-30 10:18:32,354	[WARNING]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/utils/log.py(Line:228)	Not Found: /favicon.ico
+2020-05-30 10:18:36,207	[WARNING]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/utils/log.py(Line:228)	Not Found: /favicon.ico
+2020-05-30 10:18:49,417	[WARNING]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/utils/log.py(Line:228)	Not Found: /favicon.ico
+2020-05-30 10:19:17,503	[WARNING]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/utils/log.py(Line:228)	Not Found: /favicon.ico
+2020-05-30 10:19:46,930	[WARNING]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/utils/log.py(Line:228)	Not Found: /favicon.ico
+2020-05-30 10:35:49,479	[ERROR]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/core/handlers/exception.py(Line:77)	Invalid HTTP_HOST header: '18.216.231.209'. You may need to add '18.216.231.209' to ALLOWED_HOSTS.
+2020-05-30 10:35:49,480	[WARNING]	/home/huchida/work/venv_voice_mapping/lib64/python3.7/site-packages/django/utils/log.py(Line:228)	Bad Request: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php

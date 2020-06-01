@@ -27,21 +27,21 @@ def handle_uploaded_file(f):
     print(file_name)
     # for chunk in f.chunks():
     #     print(chunk)
-    wf = wave.open(path, "r")
+    # wf = wave.open(path, "r")
     # with open(path, 'wb+') as destination:
     #     for chunk in f.chunks():
     #         destination.write(chunk)
 
 class IndexView(generic.TemplateView):
     template_name = "index.html"
-    model = Person
-    person1 = model.objects.get(id=1)
-    person2 = model.objects.get(id=2)
+    #model = Person
+    #person1 = model.objects.get(id=1)
+    #person2 = model.objects.get(id=2)
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)  # はじめに継承元のメソッドを呼び出す
-        context["person1"] = self.person1
-        context["person2"] = self.person2
+        #context["person1"] = self.person1
+        #context["person2"] = self.person2
         return context
 
     # try:

@@ -1,6 +1,8 @@
 
+# uchida
 .idea/
 media/
 *.pyc
 *.DS_Store
 vmap/.DS_Store
+voice_mapping/settings.py
