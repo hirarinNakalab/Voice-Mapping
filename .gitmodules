@@ -1,0 +1,3 @@
+[submodule "Speaker-Embeddings"]
+	path = Speaker-Embeddings
+	url = https://github.com/hirarinNakalab/Speaker-Embeddings.git
