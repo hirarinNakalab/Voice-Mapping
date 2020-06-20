@@ -1,9 +1,7 @@
 import numpy as np
-# import matplotlib.pyplot as plt
-# from   mpl_toolkits.mplot3d import Axes3D
 import csv
-# import sys
-import sklearn.manifold as mf
+# import sklearn.manifold as mf
+import sklearn.decomposition as dc
 
 def createGraph(file_path):
     CSVTEXT = np.loadtxt(file_path, delimiter=',', dtype=str)
@@ -15,8 +13,11 @@ def createGraph(file_path):
 
     DATANUM = len(DATA)
 
-    mds = mf.MDS(n_components=2, dissimilarity="precomputed", random_state=6)
-    pos = mds.fit_transform(DATA)
+    # mds = mf.MDS(n_components=2, dissimilarity="precomputed", random_state=6)
+    # pos = mds.fit_transform(DATA)
+
+    pca = dc.PCA(n_components=2)
+    pos = pca.fit_transform(DATA)
 
     # fig = plt.figure()
 
