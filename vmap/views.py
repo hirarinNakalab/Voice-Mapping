@@ -9,6 +9,7 @@ from django.http import HttpResponse
 from django.urls import reverse_lazy
 from django.shortcuts import render
 from .models import Person
+from .createGraph import createGraph 
 
 import sys
 import io
@@ -18,6 +19,8 @@ import os
 import wave
 
 UPLOAD_DIR = '/'.join(os.path.dirname(os.path.abspath(__file__)).split('/')[:-1]) + '/media/'  # アップロードしたファイルを保存するディレクトリ
+
+file_path = 'media/speaker_similarity_male.csv'
 
 # アップロードされたファイルのハンドル
 def handle_uploaded_file(f):
@@ -56,14 +59,21 @@ class VoiceMappingView(generic.FormView):
     form_class = VoiceMapping
     template_name = 'voice_mapping.html'
     # success_url = reverse_lazy('vmap:img_plot')
-    model = Person
-    person1 = model.objects.get(id=1)
-    person2 = model.objects.get(id=2)
+    #model = Person
+    #person1 = model.objects.get(id=1)
+    #person2 = model.objects.get(id=2)
+    plots, labels = createGraph(file_path)
+    
+    print(plots)
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)  # はじめに継承元のメソッドを呼び出す
-        context["person1"] = self.person1
-        context["person2"] = self.person2
+        #context["person1"] = self.person1
+        #context["person2"] = self.person2
+        context["plots"] = self.plots
+        context["labels"] = self.labels
+        #print(self.plots[0][0])
+        #context["person2"] = self.y
         return context
 
     def form_valid(self, form):
