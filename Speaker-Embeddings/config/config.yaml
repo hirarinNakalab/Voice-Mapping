@@ -1,0 +1,29 @@
+device: "cpu" # cuda or cpu
+training: !!bool "true"
+raw_nonpara_data: '../japanese_speech_corpus/jvs_ver1/'
+raw_parallel_data: '../japanese_speech_corpus/jvs_hiho_ver1/'
+---
+data:
+    nonpara_path: './data/nonpara'
+    parallel_path: './data/parallel'
+    sim_csv_path: 'data/speaker_similarity_{}.csv'
+    non_para_contents: 'nonpara30/wav24kHz16bit'
+    parallel_contents: 'parallel100/wav24kHz16bit'
+    sr: 16000
+---
+train:
+    M : 4 #Number of utterances per speaker in batch
+    num_workers: 0 #number of workers for dataloader
+    num_input_size: 5
+    num_mel_dim: 39
+    lr: 0.01 
+    iteration: 700 #Max training speaker epoch
+    log_interval: 1 #Epochs before printing progress
+    checkpoint_interval: 100 #Save model after x speaker epochs
+    checkpoint_dir: './model/ckpt'
+    restore: !!bool "false" #Resume training from previous model path
+---
+test:
+    M : 1 #Number of utterances per speaker
+    num_workers: 0 #number of workers for dataloader
+    simmat_dir: 'output'
