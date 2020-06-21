@@ -5,5 +5,4 @@ media/
 *.pyc
 *.DS_Store
 vmap/.DS_Store
-voice_mapping/settings.p
-logs/*
+voice_mapping/settings.py

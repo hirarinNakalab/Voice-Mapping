@@ -20,75 +20,42 @@
 
 {% endblock %}
 
-
 {% block contents_plot %}
 
-<h1>散布図</h1>
-  <canvas id="myScatterChart"></canvas>
-  <!-- CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
-
-  <script>
-  // グラフ作成
-  var ctx = document.getElementById("myScatterChart");
-
-  var list = []
-  var label_list = []
-  {% for plot in plots %}
-    list.push({'x': {{ plot.x }}, 'y': {{plot.y}}})
-    label_list.push("a")
-  {% endfor %}
-
-
-  var myScatterChart = new Chart(ctx, {
-    type: 'scatter',
-    data: {
-      labels: label_list,
-      datasets: [
-        {
-          label: ['Voice Map'],
-                data: list,
-          backgroundColor: 'RGBA(225,95,150, 1)',
-        }]
-    },
-    options:{
-      title: {
-        display: true,
-          text: 'Voice_Map'
-      },
-      scales: {
-        xAxes: [{
-          scaleLabel: {
-            display: true,
-            labelString: 'x'
-          },
-          ticks: {
-            suggestedMin: -3.0,
-            suggestedMax: 3.0,
-            stepSize: 0.5,
-            callback: function(value, index, values){
-              return  value
-            }
-          }
-        }],
-        yAxes: [{
-          scaleLabel: {
-            display: true,
-            labelString: 'y'
-          },
-          ticks: {
-            suggestedMax: -3.0,
-            suggestedMin: 3.0,
-            stepSize: 0.5,
-            callback: function(value, index, values){
-              return  value
-            }
-          }
-        }]
-      }
-    }
-  });
-</script>
-
-{% endblock %}                 
-
+    <canvas id="radar-chart" height="500px"></canvas>
+    <script type="text/javascript">
+    var ctx = document.getElementById("radar-chart");
+    var myRadarChart = new Chart(ctx, {
+        type: 'radar',
+        data: {
+            labels: ['国語', '算数', '理科', '社会', '英語'],
+            datasets: [
+                {   label: "{{ person1.name }}",
+                    data: ['{{ person1.japanese }}', '{{ person1.math }}', '{{ person1.science }}', '{{ person1.social }}', '{{ person1.english }}'],
+                    backgroundColor: 'rgba(255, 99, 132, 0.6)',
+                    borderColor: 'rgba(255, 99, 132, 0.9)',
+                    pointBackgroundColor: 'rgba(255, 99, 132, 0.9)',
+                    pointBorderColor: 'rgba(255, 99, 132, 1)',
+                    borderWidth: 3,
+                    pointRadius: 3,
+                },{
+                    label: "{{ person2.name }}",
+                    data: ['{{ person2.japanese }}', '{{ person2.math }}', '{{ person2.science }}', '{{ person2.social }}', '{{ person2.english }}'],
+                    backgroundColor: 'rgba(0, 0, 255, 0.6)',
+                    borderColor: 'rgba(0, 0, 255, 0.9)',
+                    pointBackgroundColor: 'rgba(0, 0, 255, 0.9)',
+                    pointBorderColor: 'rgba(0, 0, 255, 1)',
+                    borderWidth: 3,
+                    pointRadius: 3,
+                }]},
+        options : {
+            scale: {
+                ticks: {
+                    min: 50,
+                    max: 100,
+                    stepSize: 5,
+                    backdropColor: 'rgba(255, 255, 255, 0)',
+                }}}
+    });
+    </script>
+{% endblock %}
