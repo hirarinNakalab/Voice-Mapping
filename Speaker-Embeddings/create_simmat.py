@@ -1,6 +1,7 @@
 import glob
 import os
 import sys
+sys.path.append("./")
 import random
 
 import torch
@@ -22,7 +23,8 @@ def gausian_kernel(di, dj, gamma=1.0):
     return torch.exp(-gamma * norm)
 
 def main(gender="female", user_audio=""):
-    movel_path = os.path.join(hp.train.checkpoint_dir,
+    movel_path = os.path.join(os.path.dirname(__file__),
+                              hp.train.checkpoint_dir,
                               f"final_epoch_{hp.train.iteration}.model")
 
     device = torch.device(hp.device)
@@ -31,15 +33,17 @@ def main(gender="female", user_audio=""):
     net.load_state_dict(torch.load(movel_path))
     net.eval()
 
-    spekers_dict = get_speakers_dict()[gender]
+    d_vectors, speakers = [], []
+    user_name = "actors"
+    search_path = os.path.join(os.path.dirname(__file__), hp.actors_data, '*.wav')
+    for wavfile in glob.glob(search_path):
+        speakers.append(os.path.basename(wavfile).split(".")[0])
+        d_vectors.append(audio_to_dvector(wavfile, net, device))
 
-    utters = []
-    for speaker in spekers_dict.keys():
-        search_path = os.path.join(hp.data.parallel_path, speaker, '*.npy')
-        utter = random.sample(glob.glob(search_path), 1)[0]
-        utters.append(utter)
-    d_vectors = utters_to_dvectors(utters, net, device)
-    d_vectors.append(audio_to_dvector(user_audio, net, device))
+    if user_audio != "":
+        user_name = os.path.basename(user_audio).split(".")[0]
+        speakers.append(user_name)
+        d_vectors.append(audio_to_dvector(user_audio, net, device))
 
     Ns = len(d_vectors)
     utter = torch.stack(d_vectors)
@@ -47,14 +51,14 @@ def main(gender="female", user_audio=""):
     gram_matrix = torch.cat(ks, dim=1)
     gram_matrix = gram_matrix.cpu().detach().numpy()
 
-    user_name = os.path.basename(user_audio).split(".")[0]
-    speakers = [speaker for speaker in spekers_dict.keys()] + [user_name]
     simmat = pd.DataFrame(data=gram_matrix, index=speakers, columns=None)
 
-    os.makedirs(hp.test.simmat_dir, exist_ok=True)
-    fn = os.path.join(hp.test.simmat_dir, f"simmat_{user_name}.csv")
+    output_dir = os.path.join(os.path.dirname(__file__), hp.test.simmat_dir)
+    os.makedirs(output_dir, exist_ok=True)
+    fn = os.path.join(output_dir, f"simmat_{user_name}.csv")
     simmat.to_csv(fn, index=True, header=False)
     print("output: ", fn)
+
 
 
 if __name__ == "__main__":
@@ -62,7 +66,7 @@ if __name__ == "__main__":
         user_audio = sys.argv[1]
         gender = sys.argv[2]
     else:
-        user_audio = "../japanese_speech_corpus/jsut_ver1.1/voiceactress100/wav/VOICEACTRESS100_001.wav"
+        user_audio = ""
         gender = "female"
 
     main(gender=gender, user_audio=user_audio)

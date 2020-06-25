@@ -1,8 +1,8 @@
 import yaml
-
+import os
 
 def load_hparam(filename):
-    stream = open(filename, 'r')
+    stream = open(os.path.join(os.path.dirname(__file__), filename) , 'r')
     docs = yaml.load_all(stream)
     hparam_dict = dict()
     for doc in docs:
